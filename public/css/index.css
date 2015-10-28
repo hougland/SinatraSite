@@ -1,7 +1,28 @@
+body {
+  width: 960px;
+  background-color: #9999FF;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header {
+  text-align: center;
   background-color: green;
+  border:3px dashed black;
 }
 
 footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: green;
+  border:3px dashed black;
+}
+
+table{
+  margin-left:auto;
+  margin-right:auto;
+  padding: 20px;
+  width: 60%;
 }

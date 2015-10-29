@@ -1,9 +1,27 @@
-<html>
+<html lang="en">
   <head>
-    <title>My Website</title>
+    <title><%= @title %></title>
     <link href="css/index.css" rel="stylesheet">
   </head>
+
   <body>
+    <header>
+      <h1><img src="http://www.cliparthut.com/clip-arts/1778/cat-head-clip-art-1778708.jpg" alt="" height=25 width =25>
+        <%= @title %>
+        <img src="http://www.cliparthut.com/clip-arts/1778/cat-head-clip-art-1778708.jpg" alt="" height=25 width =25></h1>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <table>
+        <tr>
+          <td><a href="/index">Home Page</a></td>
+          <td><a href="/about">About Me</a></td>
+          <td><a href="/projects">My Projects</a></td>
+          <td><a href="/blog">My Blog</a></td>
+      </table>
+    </footer>
   </body>
+
 </html>

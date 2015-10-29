@@ -1,13 +1,10 @@
 <section>
   <h3>Please sign my guestbook!</h3>
-  <form>
-    First name:<br>
-    <input type="text" name="firstname">
-    <br>
-    Last name:<br>
-    <input type="text" name="lastname">
+  <form action="/guestbook" method="post">
+    Your name:<br>
+    <input type="text" name="message">
     <br><br>
     <input type="submit" value="Submit">
   </form>
-  <p>Sorry the submit button doesn't do anything yet :)</p>
+  <p>Sorry the submit button doesn't save anything yet...</p>
 </section>

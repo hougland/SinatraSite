@@ -42,4 +42,13 @@ class MySite < Sinatra::Base
     erb :guestbook
   end
 
+  post "/guestbook" do
+    "Thanks #{params[:message]}!"
+  end
+
+  not_found do
+    status 404
+    '404: page not found'
+  end
+
 end

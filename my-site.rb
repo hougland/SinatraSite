@@ -43,7 +43,10 @@ class MySite < Sinatra::Base
   end
 
   post "/guestbook" do
-    "Thanks #{params[:message]}!"
+    all_sites
+    @name = params[:message]
+    @title = "Thanks!"
+    erb :guestbookthanks
   end
 
   not_found do

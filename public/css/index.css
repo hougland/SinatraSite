@@ -27,8 +27,18 @@ table {
   margin-right:auto;
   padding: 20px;
   width: 60%;
+  font-weight: bold;
+  font-size: 20;
 }
 
 h3 {
   font-family: 'Muli', sans-serif;
+}
+
+section {
+  margin: 20px
+}
+
+p, ol, ul, table {
+  font-family: sans-serif;
 }

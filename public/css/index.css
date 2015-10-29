@@ -10,7 +10,7 @@ body {
 
 header {
   text-align: center;
-  background-color: green;
+  background-color: #00CC00;
   border:3px dashed black;
 }
 
@@ -18,7 +18,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: green;
+  background-color: #00CC00;
   border:3px dashed black;
 }
 

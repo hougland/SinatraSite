@@ -21,7 +21,7 @@
           <td><a href="/projects">My Projects</a></td>
           <td><a href="/blog">My Blog</a></td>
           <td><a href="/guestbook">Guestbook</a></td>
-          <td><a href="/<%= @all_sites[rand(0..3)] %>">Random Page</a></td>
+          <td><a href="/<%= @all_sites[rand(0..(@all_sites.length-1))] %>">Random Page</a></td>
       </table>
         <p class="copyright">&copy; <%= Time.now.year %> Ricky Lee</p>
     </footer>

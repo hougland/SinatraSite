@@ -3,7 +3,7 @@ require "sinatra"
 class MySite < Sinatra::Base
 
   def all_sites
-    @all_sites = ["index", "about", "blog", "projects"]
+    @all_sites = ["index", "about", "blog", "projects", "guestbook"]
   end
 
   get "/" do
@@ -34,6 +34,12 @@ class MySite < Sinatra::Base
     all_sites
     @title = "Ricky's Projects"
     erb :projects
+  end
+
+  get "/guestbook" do
+    all_sites
+    @title = "Guestbook"
+    erb :guestbook
   end
 
 end

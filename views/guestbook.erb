@@ -1,9 +1,11 @@
 <section>
   <h3>Please sign my guestbook!</h3>
   <form action="/guestbookthanks" method="get">
-    Your name:<br>
-    <input type="text" name="message">
+    <label for="name">
+      <span class="name">Enter your name:</span>
+    </label>
+    <input type="text" name="message" id="name">
     <br><br>
-    <input type="submit" value="Submit">
+    <button type="submit" value="Submit">Submit</button>
   </form>
 </section>

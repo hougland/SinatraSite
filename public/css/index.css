@@ -28,7 +28,7 @@ table {
   padding: 20px;
   width: 100%;
   font-weight: bold;
-  font-size: 18;
+  font-size: 18px;
   background-color: #00CC00;
   border:3px dashed black;
 }
@@ -46,12 +46,12 @@ ul {
 }
 
 .projects {
-  height: 200;
-  width: 200;
+  height: 200px;
+  width: 200px;
 }
 
 .copyright {
-  font-size: 12;
+  font-size: 12px;
   font-weight: normal;
   text-align: center;
 }

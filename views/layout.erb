@@ -16,12 +16,9 @@
     <footer>
       <table>
         <tr>
-          <td><a href="/index">Home Page</a></td>
-          <td><a href="/about">About Me</a></td>
-          <td><a href="/projects">My Projects</a></td>
-          <td><a href="/blog">My Blog</a></td>
-          <td><a href="/guestbook">Guestbook</a></td>
-          <td><a href="/<%= @all_sites[rand(0..(@all_sites.length-1))] %>">Random Page</a></td>
+          <% @footer_values.each do |description, site| %>
+            <td><a href=<%= site %>><%= description %></a></td>
+            <% end %>
       </table>
         <p class="copyright">&copy; <%= Time.now.year %> Ricky Lee</p>
     </footer>

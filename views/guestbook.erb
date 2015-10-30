@@ -1,9 +1,15 @@
 <section>
   <h3>Please sign my guestbook!</h3>
-  <form action="/guestbook" method="post">
+  <form action="/guestbookthanks" method="get">
     Your name:<br>
     <input type="text" name="message">
     <br><br>
     <input type="submit" value="Submit">
   </form>
+</section>
+
+<section>
+  <% @guestbook.each do |entry| %>
+    <p><%= entry %></p>
+  <% end %>
 </section>

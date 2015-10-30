@@ -2,8 +2,20 @@ require "sinatra"
 
 class MySite < Sinatra::Base
 
+  @guestbook = []
+
   def all_sites
     @all_sites = ["index", "about", "blog", "projects", "guestbook"]
+    @random_page = @all_sites[rand(0..(@all_sites.length-1))]
+    @footer_values = {
+      "Home Page" => "/index",
+      "About Me" => "/about",
+      "My Projects" => "/projects",
+      "My Blog" => "/blog",
+      "Guestbook" => "/guestbook",
+      "Random Page" => "/#{@random_page}"
+    }
+    return @all_sites, @footer_values, @guestbook
   end
 
   get "/" do
@@ -42,9 +54,10 @@ class MySite < Sinatra::Base
     erb :guestbook
   end
 
-  post "/guestbook" do
+  get "/guestbookthanks" do
     all_sites
     @name = params[:message]
+    @guestbook.push(@name)
     @title = "Thanks!"
     erb :guestbookthanks
   end
